@@ -1,0 +1,3 @@
+#!/bin/bash
+x=$(iwctl station wlan0 show | grep State | awk '{printf $2}')
+echo "$x "
