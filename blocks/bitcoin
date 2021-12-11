@@ -1,0 +1,4 @@
+#!/bin/bash
+ok=$(coinmon | grep "BTC" | awk '{printf "%.2f", $6}')
+echo -n "$"
+echo "$ok "

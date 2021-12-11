@@ -1,0 +1,4 @@
+#!/bin/bash
+
+x=$(df -h | awk '{ if ($6 == "/") print $4 " ("$5")" }')
+echo "$x "

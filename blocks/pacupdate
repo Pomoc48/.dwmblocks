@@ -1,4 +1,11 @@
 #!/bin/bash
 
+ok=$(pacman -Q | wc -l)
 cupd=$(checkupdates | wc -l)
-echo "$cupd "
+
+if [ $cupd == 0 ]
+then
+	echo "$ok "
+else
+	echo "$ok ($cupd) "
+fi
